@@ -8,8 +8,9 @@ const useSignup = () => {
     
     const signup = async({fullName, username, password, confirmPassword, gender}) => {
         const success = handleInputErrors({fullName, username, password, confirmPassword, gender})
-        if (!success) return;
 
+        if (!success) return;
+        setLoading(true);
         try {
             const res = await fetch("/api/auth/signup", {
                 method: "POST",
