@@ -23,6 +23,12 @@ export const SocketContextProvider = ({ children }) => {
                 }
             });
 
+            // const socket = io("http://localhost:5000", {
+            //     query: {
+            //         userId: authUser._id
+            //     }
+            // });
+
             setSocket(socket);
 
             //socket.on() is used to listen to the events, can be used both client and server side
