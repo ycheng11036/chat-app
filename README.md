@@ -8,3 +8,4 @@ What I learned:
 3. How to better layout UI
 4. How to better manage states via Context and Zustand
 5. How to properly process user authorization and storage of cookies
+6. Using custom hooks for better and cleaner production
